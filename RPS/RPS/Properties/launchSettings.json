@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RPS": {
+      "commandName": "Project",
+      "commandLineArgs": "paper scissiors rock lizzard witch tank bird"
+    }
+  }
+}
