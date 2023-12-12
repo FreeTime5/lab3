@@ -22,7 +22,7 @@ namespace RPS.Services.InputValidator.Implementations
             {
                 if (!dictionary.ContainsKey(move))
                 {
-                    dictionary[move] = true;
+                    dictionary.Add(move, true);
                 }
                 else
                 {

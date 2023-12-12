@@ -59,19 +59,21 @@ public class ConsoleGamePrinter : IGamePrinter
         {
             case GameResult.Draw:
                 Console.WriteLine("DRAW!");
-                return;
+                break;
             case GameResult.Win:
                 Console.WriteLine("YOU WIN!");
-                return;
+                break;
             case GameResult.Lose:
                 Console.WriteLine("YOU LOSE!");
-                return;
+                break;
         }
+        Console.WriteLine();
     }
 
     private void PrintHelp()
     {
         configuration.Table.Write(ConsoleTables.Format.Alternative);
+        Console.WriteLine();
     }
 
     private void PrintEndGame()

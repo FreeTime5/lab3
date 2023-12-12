@@ -27,8 +27,8 @@ while (!configuration.IsEnded)
     {
         printer.PrintEnterForUser();
         userInput = Console.ReadLine();
-        printer.PrintErrorMessage();
         validator.CheckUserInput(userInput);
+        printer.PrintErrorMessage();
     }
     while (!configuration.IsCorrectUserInput);
     
